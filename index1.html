@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+
+    .section-job-search {
+      display: flex;
+    }
+
+    .job-wrapper {
+      width: 1200px;
+      margin: 0px auto;
+    }
+
+    .search {
+      display: flex;
+      box-sizing: border-box;
+    }
+
+    .search__input {
+      height: 58px;
+      width: 75%;
+      border: 1px solid #A0A6B1;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      background-image: url(search.svg);
+      background-repeat: no-repeat;
+      background-position: top 21px left 51px;
+      padding-left: 88px;
+    }
+
+    .search__button {
+      height: 60px;
+      width: 168px;
+      background: #134965;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+
+    }
+
+    .search-result {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    .filter-wrapper {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="section-job-search">
+    <div class="job-wrapper">
+      <div class="search">
+        <input type="text" class="search__input" placeholder="Профессия, должность или компания">
+        <input type="button" class="search__button" value="Найти">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-filter">
+    <div class="filter-wrapper">
+      <div class="filter">
+        <span class="search-result">Найдено 7 646 курсов</span>
+        <div class="filters">
+          <div class="filters__rec">
+            <span class="filters__description">По рекомендациям</span>
+            <img src="arrow.svg">
+          </div>
+
+          <div class="filters__times">
+            <span class="filters__description">За всё время</span>
+            <img src="arrow.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
