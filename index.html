@@ -119,104 +119,87 @@
 
         </div>
         <div class="collumns">
-          <div class="left-filters">
-            <form>
-              <div class="left-filter-wrapper">
 
-                <div class="left-filter">
+          <div class="left-filter">
+            <form class="left-filter-wrapper">
 
-                  <span class="left-filter__first-head">Образование</span>
+              <div class="education">
+                <span class="filter-head">Образование</span>
+                <select>
+                  <option>Не имеет значения</option>
+                </select>
+              </div>
 
-                  <select>
-                    <option>Не имеет значения</option>
-                  </select>
+              <div class="age">
+                <span class="filter-head">Возраст</span>
+
+                <ul class="age__radio">
+                  <li>
+                    <input type="radio" name="age" id="age__no-object">
+                    <label for="age__no-object">Не имеет значения</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="age" id="age__custom">
+                    <label for="age__custom">Свой диапозон</label>
+                  </li>
+                </ul>
+
+                <div class="age__input">
+                  <input type="text" placeholder="от">
+                  <input type="text" placeholder="до">
+                </div>
+
+                <input type="range" class="age__range">
+
+              </div>
+
+              <div class="duraction">
+                <span class="filter-head">Продолжительность</span>
+
+                <ul class="duraction__radio">
+                  <li>
+                    <input type="radio" name="duraction" id="duraction__no-object">
+                    <label for="duraction__no-object">Не имеет значения</label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="duraction" id="duraction__custom">
+                    <label for="duraction__custom">Свой диапозон</label>
+                  </li>
+                </ul>
+
+                <div class="duraction__input">
+
+                  <input type="text" placeholder="от">
+                  <input type="text" placeholder="до">
 
                 </div>
 
-                <div class="left-filter">
+                <input type="range" class="duraction__range">
 
-                  <span class="left-filter__head">Возраст</span>
+              </div>
 
-                  <ul class="left-filter__range">
+              <div class="diplom">
+                <span class="filter-head">Документ об окончании</span>
 
-                    <li>
-                      <input type="radio" name="age">
-                      <label for="age">Не имеет значения</label>
-                    </li>
-
-                    <li>
-                      <input type="radio" name="age" >
-                      <label for="age">Свой диапозон</label>
-                    </li>
-
-                    <li class="range">
-                      <input type="text" placeholder="от">
-                      <input type="text" placeholder="до">
-                    </li>
-                    <li>
-                      <input type="range">
-                    </li>
-
-
-                  </ul>
-                </div>
-
-                <div class="left-filter">
-
-                  <span class="left-filter__head">Продолжительность</span>
-
-                  <ul class="left-filter__range">
-
-                    <li>
-                      <input type="radio" name="duraction">
-                      <label for="duraction">Не имеет значения</label>
-                    </li>
-
-                    <li>
-                      <input type="radio" name="duraction">
-                      <label for="duraction">Свой диапозон</label>
-                    </li>
-
-                    <li class="range">
-                      <input type="text" placeholder="от">
-                      <input type="text" placeholder="до">
-                    </li>
-
-                    <li>
-                      <input type="range">
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="left-filter">
-
-                  <span class="left-filter__head">Документ об окончании</span>
-
-                  <ul class="left-filter__range">
-                    <li>
-                      <input type="radio" name="duraction">
-                      <label for="duraction">Да</label>
-                    </li>
-                    <li>
-                      <input type="radio" name="duraction">
-                      <label for="duraction">Не имеет значения</label>
-                    </li>
-                  </ul>
-
-                </div>
-
-                <div class="left-filter__reset">
+                <ul class="diplom__radio">
+                  <li>
+                    <input type="radio" name="diplom" id="diplom__yes">
+                    <label for="diplom__yes">Да</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="diplom" id="diplom__no-object">
+                    <label for="diplom__no-object">Не имеет значения</label>
+                  </li>
+                </ul>
+              </div>
+                <div class="reset">
 
                   <input type="reset" value="Сбросить всё">
 
                 </div>
 
-              </div>
-
             </form>
-
           </div>
 
           <div class="offer-wrapper">
@@ -433,11 +416,14 @@
             </div>
 
             <div class="pages">
-              <a href="#" class="page-number_active">1</a>
-              <a href="#" class="page-number">2</a>
-              <a href="#" class="page-number">3</a>
-              <a href="#" class="page-number">4</a>
-              <a href="#" class="page-number">5</a>
+              <input type="button" class="page-number_active" value="1">
+              <input type="button" class="page-number" value="2">
+              <input type="button" class="page-number" value="3">
+              <input type="button" class="page-number" value="4">
+              <input type="button" class="page-number" value="5">
+              <div class="pages__dots">. . .</div>
+              <input type="button" class="page-number" value="9">
+              <input type="button" class="page-next" value="Дальше">
             </div>
 
           </div>

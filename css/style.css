@@ -206,8 +206,10 @@ header {
   display: flex;
   flex-direction: column;
 }
-.range{
+
+.range {
   display: flex;
+  margin-top: 4px;
 }
 
 .filter-wrapper {
@@ -221,17 +223,9 @@ header {
   gap: 51px;
 }
 
-.filters__description {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #71717A;
-  margin-right: 21px;
-}
-
-.left-filters {
+.left-filter {
+  display: flex;
+  flex-direction: column;
   width: 382px;
   height: 804px;
   background: #FFFFFF;
@@ -239,23 +233,75 @@ header {
 }
 
 .left-filter-wrapper {
-  display: flex;
-  flex-direction: column;
-  row-gap: 36px;
   padding: 20px;
 }
 
-.left-filter__head{
-  margin-top: 30px;
-  margin-bottom: 20px;
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
-.left-filter {
+
+.age {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
 }
 
+.age__radio {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-.left-filter__reset{
+.age__input {
+  margin-top: 4px;
+  display: flex;
+  gap: 20px;
+}
+
+.age__range {
+  margin-top: 21px;
+}
+
+.duraction {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.duraction__radio {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.duraction__input {
+  margin-top: 4px;
+  display: flex;
+  gap: 20px;
+}
+
+.duraction__range {
+  margin-top: 21px;
+}
+
+.diplom {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.diplom__radio {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reset {
   margin-top: 50px;
 }
 
@@ -323,6 +369,7 @@ header {
   margin: 239px 375px 41px 53px;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .page-number_active {
@@ -358,8 +405,39 @@ header {
 }
 
 .page-number:hover {
-  width: 69px;
-  height: 66px;
+  background: rgba(19, 73, 101, 0.6);
+  border: 2px solid #134965;
+}
+
+.pages__dots {
+  width: 31px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+}
+
+.page-next {
+  display: flex;
+  align-items: center;
+  width: 182px;
+  height: 68px;
+  background: rgba(19, 73, 101, 0.6);
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+}
+
+.page-next:hover {
   background: rgba(19, 73, 101, 0.6);
   border: 2px solid #134965;
 }
