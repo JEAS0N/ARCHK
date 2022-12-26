@@ -431,7 +431,7 @@ header {
 
 .offer {
   width: 1167px;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -565,6 +565,7 @@ header {
   line-height: 36px;
   letter-spacing: 0em;
   color: #FFFFFF;
+  cursor: default;
 }
 
 .page-number {
@@ -581,6 +582,7 @@ header {
   line-height: 36px;
   letter-spacing: 0em;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .page-number:hover {
